@@ -15,7 +15,7 @@
     * Community Cloud
     * Multi Cloud
 
- 1) ***Public clou**:
+ 1) ***Public cloud**:
   *  Here we will have  Cloud Services Provider (CSP) like  Azure, AWS, GCP owning infrastructure (Regions, Zones, Datacenters) and  Cloud service Consumers creating accounts and using services
 
   ![Public_Cloud_Image](../Images_Azure/az_publiccloud.webp)
