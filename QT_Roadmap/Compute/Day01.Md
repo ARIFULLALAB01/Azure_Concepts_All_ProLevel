@@ -6,16 +6,16 @@
 
 
 ## Cloud
- - Cloud is all about using someone else’s hardware
- - We have discussed about regions, zones and datacneters
+ * Cloud is all about using someone else’s hardware
+ * We have discussed about regions, zones and datacneters
  * Types of Cloud
-  - Public cloud
-  - Private Cloud
-  - Hybrid Cloud
-  - Community Cloud
-  - Multi Cloud
+    * Public cloud
+    * Private Cloud
+    * Hybrid Cloud
+    * Community Cloud
+    * Multi Cloud
 
- 1) Public cloud:
+ 1) ***Public clou**:
   *  Here we will have  Cloud Services Provider (CSP) like  Azure, AWS, GCP owning infrastructure (Regions, Zones, Datacenters) and  Cloud service Consumers creating accounts and using services
 
   ![Public_Cloud_Image](../Images_Azure/az_publiccloud.webp)
