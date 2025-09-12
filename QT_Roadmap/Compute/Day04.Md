@@ -1,11 +1,12 @@
 # Azure Virtual machines Contineous Class: 
 ## Credentials
- * Linux:
-  - Username and Password
-  - Username and key
- * Windows
-  - Username and Password
- * **Key: Azure has a service** where you can create private key and public key (key pair) or import your existing keys
+* Linux:
+     * Username and Password
+     * Username and key
+* Windows
+     * Username and Password
+
+* **Key: Azure has a service** where you can create private key and public key (key pair) or import your existing keys
 
 ![SSH_Key_Gen_Azure](../Images_Azure/azcompute10.webp)
 

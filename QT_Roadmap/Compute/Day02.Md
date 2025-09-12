@@ -1,12 +1,15 @@
 # IaaS vs PaaS vs SaaS
 
- **1. IaaS (Infrastructure as a Service)**
+**1. IaaS (Infrastructure as a Service)**
   * (You manage OS, runtime, networking; Azure provides infra)
- **2. PaaS (Platform as a Service)**
+
+**2. PaaS (Platform as a Service)**
  * (You manage applications & data; Azure manages OS, runtime, scaling, infra)
- **3. SaaS (Software as a Service)**
+
+**3. SaaS (Software as a Service)**
  * (End-user ready applications; no infra/platform management)
- **4.FaaS (Functions as a Service / Serverless)**
+
+**4.FaaS (Functions as a Service / Serverless)**
 
 ## Overview Image
 
