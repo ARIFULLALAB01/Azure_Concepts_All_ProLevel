@@ -33,8 +33,9 @@
   - Azure is a Public cloud services provider
   - They organize the infrastructue across
   - Physical Hierarchy:
-      Region > Zones > Datacenters > Racks > Server
-      ![Physical Hierarchy](../Images_Azure/PhysicalHierarchy_Image.webp)
+      Region > Zones > Datacenters > Racks > Server 
+    
+      ![Physical_Hierarchy](../Images_Azure/az_PhysicalHierachy.webp)
 
 Explore Globe of Azure [Refer Here](https://datacenters.microsoft.com/globe/explore/) and [Refer Here](https://datacenters.microsoft.com/tour/) for data center tour
 
