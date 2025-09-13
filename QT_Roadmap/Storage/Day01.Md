@@ -44,6 +44,8 @@
 ### SLA (Service Level agreement) :
   * [Refer Here](https://www.azure.cn/en-us/support/sla/storage/)
 
+### Endpoint: Endpoint represents a url where you can access service.
+
 ### Exercise
    * What is (Interms of storage)
    * Durability
