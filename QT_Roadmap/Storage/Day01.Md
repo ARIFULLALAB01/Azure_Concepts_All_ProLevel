@@ -39,6 +39,11 @@
   * Having multiple copies of data. This increases Availability as well as durability
 ### Gibi byte (GB) vs giga byte (GiB)
 
+### sku (store keep unit)
+
+### SLA (Service Level agreement) :
+  * [Refer Here](https://www.azure.cn/en-us/support/sla/storage/)
+
 ### Exercise
    * What is (Interms of storage)
    * Durability
