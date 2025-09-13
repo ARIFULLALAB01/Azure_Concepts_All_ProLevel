@@ -117,3 +117,100 @@
 ## Activity 11: Using Azure Storage account for Data Lakes
 [Refer Here](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) for using azure storage account as datalake
 
+## Activity 12: Attach a data disk to linux vm (Managed Disk Continuty)
+
+ * Create a free (b1s) vm with any linux os
+ * List the block devices lsblk
+ 
+ ![AT-15](../Images_Azure/azstorage43.webp)
+
+ * Create a directory /tools
+ * Attach a data disk of size 4GiB
+
+ ![At-16](../Images_Azure/azstorage44.webp)
+
+ * Now list block devices
+
+ ![At-17](../Images_Azure/azstorage45.webp)
+
+ * The disk can be partioned or used directly for partiotion [Refer Here](https://cloudinfrastructureservices.co.uk/how-to-create-partitions-in-ubuntu-linux-using-fdisk/)
+ * Lets use the disk directly by creating a xfs filesystem
+ ![At-18](../Images_Azure/azstorage46.webp)
+
+## Activity 13: Ensure mounts are available after restart
+  * Lets stop the vm and start the vm
+  * We observe the /tools is not mounted.
+  * To retain mounts in linux across restarts we need to use fstab [Refer Here](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal?tabs=ubuntu#mount-the-disk)
+  * Add fstab entries as discussed in the class.
+
+
+## Activity 14: Create a backup of as disk.
+ * Backup of disk is referred as snapshot.
+
+   ![At-18](../Images_Azure/azstorage47.webp)
+
+ * types of backup
+     * full: Complete readonly copy of disk
+     * incremental: backups the changes done post previous snapshot.
+
+     ![At-19](../Images_Azure/azstorage48.webp)
+
+## Activity 15: Create a disk from this snapshot and mount to vm.
+ * Create a disk
+  ![AT-20](../Images_Azure/azstorage49.webp)
+
+  ![At-21](../Images_Azure/azstorage50.webp)
+
+ * Attach this disk to new vm
+
+   ![At-22](../Images_Azure/azstorage51.webp)
+
+   ![At-23](../Images_Azure/azstorage52.webp)
+
+## Activity 16: Enable automatic backups for disks
+
+* Create a vm with b1s and ubuntu os
+* ssh into vm and install any application
+* Open Backup center
+
+  ![At-24](../Images_Azure/azstorage53.webp)
+
+  ![At-25](../Images_Azure/azstorage54.webp)
+
+## Activity 17: Use Azure File storage
+
+ * Create two vms in the same region.
+
+   ![AT-26](../Images_Azure/azstorage56.webp)
+
+ * Create a storage account (standard or premium file share)
+ 
+   ![AT-27](../Images_Azure/azstorage57.webp)
+
+ * Mount the file storage to any folder (drive in windows) in vms
+ * To mount the details can be found in the connect
+
+  ![At-28](../Images_Azure/azstorage58.webp)
+
+ * When the data is minimal in size and we need to mount the data not to morethan 3 vms we can enable shared disks
+
+
+## File Shares
+  * Azure provides storage accounts with file share capabilities
+  * Azure File Share uses SMB protocol which can connect to multiple os as disks
+
+  ![AT-26](../Images_Azure/azstorage55.webp)
+
+
+## Queue Storage
+ * Azure provides queue storage as a service in standard storage accounts.
+ * [Refer Here](https://learn.microsoft.com/en-us/azure/storage/queues/storage-quickstart-queues-python?tabs=passwordless%2Croles-azure-portal%2Cenvironment-variable-windows%2Csign-in-azure-cli) for code examples
+
+
+## For Backups, we can use
+  * Backup center
+  * Business continuity center
+## For Recovery, we can use
+  * Recovery services vault
+  * Business continuity center
+## The data will be stored in vault
